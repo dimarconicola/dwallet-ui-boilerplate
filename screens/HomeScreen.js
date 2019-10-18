@@ -17,6 +17,7 @@ export default function HomeScreen() {
       >
         <ActivityIndicator />
 
+
         <EarnCard />
 
         <QuickActionCard />
@@ -30,7 +31,7 @@ export default function HomeScreen() {
           />
           <Text style={styles.nicoContainerTitle}>Compound</Text>
           <Text style={styles.nicoContainerSubtitle}>
-            Supply liquidity to Compound.finance and start earning annual
+            Ciao liquidity to Compound.finance and start earning annual
             interest now!
           </Text>
           <ButtonWhite />
