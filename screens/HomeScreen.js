@@ -1,15 +1,16 @@
 import * as WebBrowser from "expo-web-browser";
 import React from "react";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
-
 import { EarnCard } from "../components/EarnCard";
 import { ButtonWhite } from "../components/ButtonWhite";
 import { QuickActionCard } from "../components/QuickActionCard";
 import AccordionComponent from "../components/AccordionComponent";
-import { ActivityIndicator } from "react-native-paper";
+import { Portal, ActivityIndicator } from "react-native-paper";
+import ModalTemplate from "../components/ModalTemplate";
 
 export default function HomeScreen() {
   return (
+  
     <View style={styles.container}>
       <ScrollView
         style={styles.container}
@@ -17,8 +18,9 @@ export default function HomeScreen() {
       >
         <ActivityIndicator />
 
-
         <EarnCard />
+
+        <ModalTemplate />
 
         <QuickActionCard />
 
@@ -73,6 +75,7 @@ export default function HomeScreen() {
 
       <View style={styles.tabBarInfoContainer}></View>
     </View>
+    
   );
 }
 
