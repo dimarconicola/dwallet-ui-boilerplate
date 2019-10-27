@@ -78,7 +78,13 @@ export default class ModalTemplate extends Component {
             this.setModalVisible(true);
           }}
         >
-          <Text>Show Modal</Text>
+          <View style={styles.questioncontainer}>
+          <Text style={styles.question}>Gas Price</Text>
+          <Image
+            style={styles.questionmark}
+            source={require("../assets/images/question.png")}
+          />
+          </View>
         </TouchableHighlight>
       </View>
     );
@@ -138,5 +144,31 @@ const styles = StyleSheet.create({
     width: 30,
     resizeMode: 'contain',
     marginTop: 0,
-  }
+  },
+
+  questioncontainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignContent: 'center',
+    marginTop: 10,
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 10,
+  },
+
+  question: {
+    margin: 0,
+    color: "#000",
+    fontSize: 18,
+    fontFamily: "Rubik-Light"
+  },
+
+  questionmark: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+    marginLeft: 7,
+    padding: 0,
+  },
 });
