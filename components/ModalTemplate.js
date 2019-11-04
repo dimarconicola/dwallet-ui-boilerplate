@@ -23,7 +23,7 @@ export default class ModalTemplate extends Component {
     return (
       <View style={styles.view}>
         <Modal
-          animationType="fade"
+          animationType="slide"
           transparent={false}
           visible={this.state.modalVisible}
           presentationStyle="fullScreen"
